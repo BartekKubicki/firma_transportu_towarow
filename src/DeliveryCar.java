@@ -10,4 +10,8 @@ public class DeliveryCar extends Vehicle{
     public int getCapacity() {
         return capacity;
     }
+
+    public String getBrand() {
+        return brand;
+    }
 }

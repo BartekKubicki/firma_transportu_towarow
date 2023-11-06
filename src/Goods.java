@@ -14,4 +14,5 @@ public class Goods {
     public double getWeight() {
         return weight;
     }
+
 }

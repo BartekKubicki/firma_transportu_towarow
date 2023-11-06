@@ -10,4 +10,8 @@ public class Truck extends Vehicle{
     public int getCapacity() {
         return capacity;
     }
+
+    public String getBrand() {
+        return brand;
+    }
 }
