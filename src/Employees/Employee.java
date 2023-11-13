@@ -1,4 +1,6 @@
-public class Employee {
+package Employees;
+
+public class Employee implements Comparable<Employee>{
     private String name;
     private String sureName;
     private int age;
@@ -25,14 +27,6 @@ public class Employee {
         return age;
     }
 
-    public boolean isLicenseToDriveATruck() {
-        return licenseToDriveATruck;
-    }
-
-    public boolean isLicenseToDriveAShip() {
-        return licenseToDriveAShip;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -51,5 +45,18 @@ public class Employee {
 
     public void setLicenseToDriveAShip(boolean licenseToDriveAShip) {
         this.licenseToDriveAShip = licenseToDriveAShip;
+    }
+
+    public static boolean isLicenseToDriveATruck() {
+        return licenseToDriveATruck;
+    }
+
+    public static boolean isLicenseToDriveAShip() {
+        return licenseToDriveAShip;
+    }
+
+    @Override
+    public int compareTo(Employee otherEmployee) {
+        return this.getName().compareTo(otherEmployee.getName());
     }
 }
