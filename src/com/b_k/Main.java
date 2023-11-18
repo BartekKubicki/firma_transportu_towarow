@@ -128,7 +128,6 @@ public class Main {
                         int capacity = scanner.nextInt();
                         scanner.nextLine();
                         String brand = scanner.nextLine();
-                        scanner.nextLine();
                         if(capacity < 50  || capacity > 150){
                             System.out.println("Nieodpowiednia pojemność");
                             break;
@@ -142,7 +141,6 @@ public class Main {
                         int capacity = scanner.nextInt();
                         scanner.nextLine();
                         String brand = scanner.nextLine();
-                        scanner.nextLine();
                         if(capacity < 50  || capacity > 150){
                             System.out.println("Nieodpowiednia pojemność");
                             break;
@@ -156,7 +154,6 @@ public class Main {
                         int capacity = scanner.nextInt();
                         scanner.nextLine();
                         String brand = scanner.nextLine();
-                        scanner.nextLine();
                         if(capacity < 50  || capacity > 150){
                             System.out.println("Nieodpowiednia pojemność");
                             break;
@@ -182,13 +179,12 @@ public class Main {
                     }
                     Goods newGoods = new Goods(goodsName,goodsWeight);
                     goods.add(newGoods);
+                    System.out.println("Dodano towar: " + newGoods.getType() + " " + newGoods.getWeight());
                     break;
 
                 case 4:
                     System.out.println("Wybierz jednostkę transportu do załadowania (numer):");
-                    for (int i = 0; i < transportVehicles.size(); i++) {
-                        System.out.println(i + ". " + transportVehicles.get(i).getClass().getSimpleName());
-                    }
+                    System.out.println(transportVehicles.toString());
                     int transportIndex = scanner.nextInt();
                     scanner.nextLine();
 
